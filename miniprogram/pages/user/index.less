@@ -1,0 +1,122 @@
+page{
+    background-color: #F3F4F5;
+}
+.user_info_wrap{
+    height: 45vh;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    .user_img_wrap{
+        position: relative;
+        .user_bg{
+            height: 50vh;
+            // 高斯模糊
+            filter: blur(10rpx);
+        }
+        .user_info{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 30%;
+            text-align: center;
+            .user_icon{
+                width: 130rpx;
+                height: 130rpx;
+                border-radius: 50%;
+            }
+            .user_name{
+                color: #000000;
+                margin-top: 20rpx;
+                font-size: 35rpx;
+            }
+        }
+    }
+    .user_btn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40%;
+        border: 1rpx solid #000000;
+        color: #000;
+        font-size: 38rpx;
+        padding: 30rpx;
+        border-radius: 10rpx;
+    }
+}
+
+.user_content{
+    position: relative;
+    .user_main{
+        color: #4b4444;
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40rpx;
+
+        .history_wrap{
+            background-color: #ffffff;
+            border-radius: 15rpx;
+            display: flex;
+            navigator{
+                flex: 1;
+                text-align: center;
+                padding: 10rpx 0;
+                .his_num{
+                    color: var(--themeColor);
+                }
+            }
+        }
+        .orders_wrap{
+            background-color: #ffffff;
+            border-radius: 15rpx;
+            margin-top: 30rpx;
+            .orders_title{
+                padding: 20rpx;
+                border-bottom: 1rpx solid #cccccc;
+            }
+            .orders_content{
+                display: flex;
+                navigator{
+                    padding: 15rpx 0;
+                    flex: 1;
+                    text-align: center;
+                    .iconfont{
+                        color: var(--themeColor);
+                        font-size: 40rpx;
+                    }
+                    .order_name{}
+                }
+            }
+        }
+        .address_wrap{
+            margin-top: 30rpx;
+            background-color: #ffffff;
+            border-radius: 15rpx;
+            padding: 20rpx;
+        }
+        .app_info_wrap{
+            margin-top: 30rpx;
+            background-color: #ffffff;
+            border-radius: 15rpx;
+            .app_info_item{
+                padding: 20rpx;
+                border-bottom: 1rpx solid #cccccc;
+            }
+            .app_info_contact{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .recommend_wrap{
+            margin-top: 30rpx;
+            background-color: #ffffff;
+            border-radius: 15rpx;
+            padding: 20rpx;
+        }
+        .add_height{
+            width: 100%;
+            height: 90rpx;
+        }
+    }
+}
